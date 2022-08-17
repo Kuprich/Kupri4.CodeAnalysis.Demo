@@ -1,0 +1,41 @@
+﻿@page "/"
+
+
+@inject CompileService CompileService;
+
+<div>
+    <div class="form-group">
+        <label for="">C# Code</label>
+        <textarea class="form-control" rows="10"></textarea>
+    </div>
+    <button class="btn btn-primary" @onclick="Run">Run</button>
+    <div class="card">
+        <div class="card-body">
+            <pre>Результат работы</pre>
+        </div>
+        <div class="card-body">
+            <pre>Результат компиляции</pre>
+        </div>
+    </div>
+</div>
+
+@code{
+
+    string? ResultText; 
+
+    async Task Run()
+    {
+        try
+        {
+            
+        } 
+        catch(Exception ex)
+        {
+            throw new InvalidOperationException();    
+        }
+        finally
+        {
+            
+        }
+    }
+}
